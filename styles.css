@@ -1,0 +1,271 @@
+
+/* 全局样式 */
+
+body {
+    font-family: Arial, sans-serif;
+    color: #081B19;
+    font-size: 18px;
+    margin-left: 200px; /* 增加页面的边距 */
+    margin-right: 50px; /* 增加页面的边距 */
+    padding: 0;
+    line-height: 1.6;
+    text-align: center; /* 将文本居中 */
+    background-color:rgb(244, 228, 228);
+}
+
+h1 {
+    text-align: center; /* 将文本居中 */
+    margin-top: 35px; /* 标题上方移除默认间距 */
+    padding: 0px; /* 导航栏的内边距 */
+    font-size: 70px; /* 标题字体大小 */
+    margin-bottom: 35px; /* 标题与段落之间的间距 */
+    border-radius: 5px; /* 添加圆角 */
+    background-color:none; /* 导航栏背景颜色 */
+    box-shadow: 0px 0.1px 0px rgba(0, 0, 0, 0.1); /* 导航栏右侧添加阴影 */
+    color: #333; /* 导航栏文字颜色 */
+    font-weight:lighter;
+}
+h2{
+    padding: 20px;
+    box-shadow: 0px 0.5px 0px rgba(0, 0, 0, 0.1); /* 导航栏右侧添加阴影 */}
+h3{    
+    background-color:none; /* 导航栏背景颜色 */
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1); /* 导航栏右侧添加阴影 */
+    
+}
+    
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+a:hover {
+    color:#081B19;
+}
+/* 导航栏样式 */
+.sidebar {
+    width: 150px; /* 设置导航栏的宽度 */
+    background-color:none; /* 导航栏背景颜色 */
+    padding: 10px; /* 导航栏的内边距 */
+    position: fixed; /* 导航栏固定在页面左侧 */
+    height: 100%; /* 导航栏高度占满页面 */
+    left: 0; /* 将导航栏左对齐 */
+    top: 0; /* 导航栏在页面顶部 */
+    box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1); /* 导航栏右侧添加阴影 */
+    color: #333; /* 导航栏文字颜色 */
+    z-index: 1000; /* 确保导航栏在其他内容之上 */
+}
+
+.sidebar ul {
+    list-style: none; /* 移除列表样式 */
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 20px; /* 列表项之间的间距 */
+}
+
+.sidebar a {
+    display: block; /* 链接作为块元素 */
+    padding: 10px 15px; /* 链接的内边距 */
+    font-size: 18px; /* 调整字体大小 */
+    color: #081B19; /* 链接文字颜色 */
+    text-decoration: none; /* 移除下划线 */
+    transition: all 0.3s; /* 平滑过渡效果 */
+    border-radius: 5px; /* 添加圆角 */
+    border: 2px solid transparent; /* 默认无边框 */
+}
+
+.sidebar a:hover, .sidebar a:active {
+    background-color: #f5f5f5; /* 鼠标悬停或被点击时改变链接的背景颜色 */
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    font-size: 20px; /* 鼠标悬停或被点击时调整字体大小 */
+}
+
+/* 页面内容 */
+.content {
+    margin-left: 200px; /* 为导航栏预留空间 */
+    padding: 0px; /* 内容的内边距 */
+}
+
+.navigation-bar a:hover {
+    background-color: #ecf0f1; /* 鼠标悬停时改变链接的背景颜色 */
+}
+
+/* 月份导航栏样式 */
+.month-navigation {
+    margin: 20px 0; /* 调整月份导航栏与其他内容之间的间距 */
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 使用纵向布局 */
+    justify-content: center; /* 内容居中 */
+}
+
+.month-row {
+    display: flex; /* 使用 flex 布局 */
+    justify-content: center; /* 列表项居中 */
+    margin-bottom: 10px; /* 调整两排之间的间距 */
+}
+
+.month-row a {
+    padding: 10px 10px; /* 调整链接的边距 */
+    font-size: 18px; /* 调整链接的字体大小 */
+    background-color: #f5f5f5; /* 链接背景颜色 */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    border-radius: 5px; /* 添加圆角 */
+    text-decoration: none; /* 移除下划线 */
+    margin-right: 10px; /* 列表项之间的间距 */
+    transition: background-color 0.3s; /* 平滑背景色变化 */
+}
+
+.month-row a:last-child {
+    margin-right: 0; /* 最后一个链接移除右侧间距 */
+}
+
+.month-row a:hover {
+    background-color: #ecf0f1; /* 鼠标悬停时改变链接的背景颜色 */
+}
+
+/* 地点导航栏样式 */
+.place-navigation {
+    margin: 20px 0; /* 调整月份导航栏与其他内容之间的间距 */
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 使用纵向布局 */
+    justify-content: center; /* 内容居中 */
+}
+
+.place-row {
+    display: flex; /* 使用 flex 布局 */
+    justify-content: center; /* 列表项居中 */
+    margin-bottom: 10px; /* 调整两排之间的间距 */
+}
+
+.place-row a {
+    padding: 10px 10px; /* 调整链接的边距 */
+    font-size: 18px; /* 调整链接的字体大小 */
+    background-color: #f5f5f5; /* 链接背景颜色 */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    border-radius: 5px; /* 添加圆角 */
+    text-decoration: none; /* 移除下划线 */
+    margin-right: 10px; /* 列表项之间的间距 */
+    transition: background-color 0.3s; /* 平滑背景色变化 */
+}
+
+.place-row a:last-child {
+    margin-right: 0; /* 最后一个链接移除右侧间距 */
+}
+
+.place-row a:hover {
+    background-color: #ecf0f1; /* 鼠标悬停时改变链接的背景颜色 */
+}
+
+/* 花品导航栏样式 */
+.species-navigation {
+    margin: 20px 0; /* 调整月份导航栏与其他内容之间的间距 */
+    display: flex; /* 使用 flex 布局 */
+    flex-direction: column; /* 使用纵向布局 */
+    justify-content: center; /* 内容居中 */
+}
+
+.species-row {
+    display: flex; /* 使用 flex 布局 */
+    justify-content: center; /* 列表项居中 */
+    margin-bottom: 10px; /* 调整两排之间的间距 */
+}
+
+.species-row a {
+    padding: 10px 10px; /* 调整链接的边距 */
+    font-size: 18px; /* 调整链接的字体大小 */
+    background-color: #f5f5f5; /* 链接背景颜色 */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    border-radius: 5px; /* 添加圆角 */
+    text-decoration: none; /* 移除下划线 */
+    margin-right: 10px; /* 列表项之间的间距 */
+    transition: background-color 0.3s; /* 平滑背景色变化 */
+}
+
+.species-row a:last-child {
+    margin-right: 0; /* 最后一个链接移除右侧间距 */
+}
+
+.species-row a:hover {
+    background-color: #ecf0f1; /* 鼠标悬停时改变链接的背景颜色 */
+}
+
+/* 赏花点部分样式 */
+.flower-spot {
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 0px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    background-color:#f5f5f5;
+    text-align: center; /* 将文本居中 */
+}
+
+.images-row {
+    display: flex; /* 使用flex布局 */
+    justify-content: center; /* 图片居中 */
+}
+
+.images-row img {
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1); /* 添加阴影 */
+    border-radius: 10px; /* 圆角 */
+    margin-right: 10px; /* 图片之间间距 */
+    margin-bottom: 50px; /* 图片之间间距 */
+    object-fit: cover; /* 裁剪图片 */
+    width: 31%; /* 调整宽度以保持两张图片一排 */
+    height: auto; /* 自动调整高度 */
+}
+
+
+/* 花种介绍部分样式 */
+#flower-intro {
+    margin-bottom: 20px; /* 花种介绍与其他内容之间的间距 */
+    display: flex; /* 使用 flex 布局 */
+    flex-wrap: wrap; /* 允许子元素自动换行 */
+    justify-content: space-between; /* 子元素均匀分布 */
+    margin-left: -200px; /* 设置花种介绍部分的左边距 */
+    margin-right: 0px; /* 设置花种介绍部分的右边距 */
+}
+
+/* 花种条目样式 */
+.flower-entry {
+    flex: 30%; /* 每个花种条目占据 30% 的父元素宽度 */
+    display: flex; /* 使用 flex 布局 */
+    align-items: center; /* 垂直对齐 */
+    margin-right: 20px;
+    margin-bottom: 20px; /* 每个花种介绍之间的间距 */
+    border-radius: 5px; /* 边框圆角 */
+    border: 1px solid #ccc; /* 边框颜色 */
+    padding: 10px; /* 内边距 */
+    background-color: #f9f9f9; /* 背景颜色 */
+    box-sizing: border-box; /* 包括内边距和边框在宽度内 */
+}
+
+/* 花种图片样式 */
+.flower-image {
+    width: 180px; /* 图片宽度 */
+    height: 180px; /* 图片高度 */
+    margin-right: 20px; /* 图片与描述之间的间距 */
+    border-radius: 5px; /* 图片圆角 */
+    border: 1px solid #ccc; /* 图片边框 */
+}
+
+/* 花种描述样式 */
+.flower-description {
+    text-align: left; /* 文本左对齐 */
+    flex-grow: 1; /* 描述部分占满剩余空间 */
+}
+
+.flower-description h3 {
+    margin-top: 0; /* 标题上方移除默认间距 */
+    color: #333; /* 标题颜色 */
+    font-weight: bold; /* 标题加粗 */
+    font-size: 20px; /* 标题字体大小 */
+    margin-bottom: 10px; /* 标题与段落之间的间距 */
+}
+
+.flower-description  
+p{
+    margin-bottom: 5px; /* 段落之间的间距 */
+    color: #666; /* 段落文本颜色 */
+}
